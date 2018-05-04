@@ -1,0 +1,84 @@
+<html>
+<head>
+	<script language="javascript" type="text/javascript" src="./js/perceptron.js"></script>
+	<script language="javascript" type="text/javascript" src="./js/sketch.js"></script>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css" />
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<h2 class="col-12 mt-3">Red Neuronal - Equipo #1</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-4">
+						<div class="card text-white bg-dark mb-3">
+							<div class="card-body">
+							  <h6 class="card-title">Eduardo Adrian Martinez Tamez - 1630235</h6>
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="card border-dark mb-3">
+							<div class="card-body">
+							  <h6 class="card-title">Carmen Dinora Barrientos Martinez - 1595310</h6>
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="card text-white bg-dark mb-3">
+							<div class="card-body">
+							  <h6 class="card-title">Luis Alberto Chairez Navarro - 1626952</h6>
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="card border-dark mb-3">
+							<div class="card-body">
+							  <h6 class="card-title">José de Jesús Isaías Rocha Ibarra - 1631829</h6>
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="card text-white bg-dark mb-3">
+							<div class="card-body">
+							  <h6 class="card-title">Giovanny Alejandro Tello Zavala - 1620391</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="function col-6">
+						<h5 class="col-12">Funcion lineal que esta resolviendo acutalmente: </h5>
+						<span id="function-value"></span>
+						<input type="number" name="pending" id="pending" step="0.1" placeholder="0">
+						* x +
+						<input type="number" name="constant" id="constant" placeholder="0" max="0.95" step="0.01" min="-0.95">
+					</div>
+					<div class="function col-6">
+						<h5 class="col-12">Velocidad de aprendizaje (Recomendado 0.001 o 0.01): </h5>
+						<input type="number" name="learning-rate" id="learning-rate" placeholder="0" max=".99999" step="0.001" min="0">						
+					</div>
+					<input type="button" onclick="initializeValues()" class="btn btn-primary btn-lg" value="Actualizar grafica">
+				</div>
+			</div>
+			<hr class="col-12">
+			<div class="container">
+				<div class="row">
+					<h4 class="col-12">Rango de la grafica x = (-1, 1), y = (-1, 1)</h4>
+					<div id="canvas" class="col-6 offset-3"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="./js/jquery.min.js" ></script>
+	<script language="javascript" type="text/javascript" src="./js/p5.min.js"></script>
+	<script src="./js/popper.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	
+</body>
+</html>
